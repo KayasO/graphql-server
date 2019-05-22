@@ -6,7 +6,8 @@
   "author": "Okan Kayas <okan-kayas@web.de>",
   "license": "MIT",
   "dependencies": {
-    "graphql-yoga": "^1.17.4"
+    "graphql-yoga": "^1.17.4",
+    "prisma-client-lib": "^1.33.0"
   },
   "devDependencies": {
     "prettier": "^1.17.1"
