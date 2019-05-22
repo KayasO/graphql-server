@@ -12,17 +12,16 @@ let idCount = links.length
 const resolvers = {
   Query: {
     info: () => `This is some information about the API`,
-    feed: () => links,
+    feed: (parent, args, context, info) => {
+      return context.prisma.links()
+    },
   },
   Mutation: {
-    post: (parent, args) => {
-      const link = {
-        id: `link-${idCount++}`,
-        description: args.description,
+    createLink: (parent, args, context) => {
+      return context.prisma.createLink({
         url: args.url,
-      }
-      links.push(link)
-      return link
+        description: args.description,
+      })
     },
   },
   Link: {
