@@ -1,0 +1,11 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KayasO/graphql-server.git",
+  "author": "Okan Kayas <okan-kayas@web.de>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.17.4"
+  }
+}
